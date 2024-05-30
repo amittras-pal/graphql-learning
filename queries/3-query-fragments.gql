@@ -1,0 +1,17 @@
+# Fragmnents are more useful with the front-end
+
+# define fragment
+fragment cDetails on Company {
+  id
+  name
+  description
+}
+
+query companyDetails {
+  c1: company(id: "1") {
+    ...cDetails
+  }
+  c2: company(id: "2") {
+    ...cDetails
+  }
+}

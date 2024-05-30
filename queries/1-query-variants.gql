@@ -1,0 +1,26 @@
+# Query Variant 1
+{
+  company(id: "1") {
+    id
+    name
+    description
+  }
+}
+
+# Query Variant 2
+query {
+  company(id: "1") {
+    id
+    name
+    description
+  }
+}
+
+# Query Variant 3
+query companyDetails {
+  company(id: "1") {
+    id
+    name
+    description
+  }
+}

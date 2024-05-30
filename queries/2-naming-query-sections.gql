@@ -1,0 +1,27 @@
+# Query same field multiple times in the same query
+{
+  c1: company(id: "1") {
+    id
+    name
+    description
+  }
+  c2: company(id: "2") {
+    id
+    name
+    description
+  }
+}
+
+# variant-2
+{
+  c1: company(id: "1") {
+    id
+    name
+    description
+  }
+  company(id: "2") {
+    id
+    name
+    description
+  }
+}
